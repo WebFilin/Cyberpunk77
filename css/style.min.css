@@ -2413,6 +2413,7 @@ svg.mask {
   font-family: "Conv_SEGA";
   cursor: pointer;
   line-height: 1.2em;
+  margin-top:20px;
 }
 
 .more-cars a {
