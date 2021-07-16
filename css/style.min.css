@@ -2551,7 +2551,7 @@ svg.mask {
   background-image: url(../img/cars/Cyberpunk2077_QuadraType66_Nomad-948-1080.webp);
   background-size: cover;
   background-position: 50% 50%;
-  margin-top:10px;
+  margin-top:20px;
 }
 
 .block-qaddra:hover ~ .info-qaddra {
