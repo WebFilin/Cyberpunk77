@@ -1,0 +1,5 @@
+var itemsImplant = Array.from(document.querySelectorAll(".items__body")); itemsImplant.forEach(function (a) { return a.addEventListener("click", showMenu) }); var InfoImplant = Array.from(document.querySelectorAll(".cyber__info"));
+function showMenu(a) {
+   Array.from(InfoImplant).forEach(function (b) { b.classList.remove("js-add-triger__implants") }); itemsImplant[0].contains(a.target) ? InfoImplant[0].classList.add("js-add-triger__implants") : itemsImplant[1].contains(a.target) ? InfoImplant[1].classList.add("js-add-triger__implants") : itemsImplant[2].contains(a.target) ? InfoImplant[2].classList.add("js-add-triger__implants") : itemsImplant[3].contains(a.target) ? InfoImplant[3].classList.add("js-add-triger__implants") : itemsImplant[4].contains(a.target) ?
+      InfoImplant[4].classList.add("js-add-triger__implants") : itemsImplant[5].contains(a.target) ? InfoImplant[5].classList.add("js-add-triger__implants") : itemsImplant[6].contains(a.target) ? InfoImplant[6].classList.add("js-add-triger__implants") : itemsImplant[7].contains(a.target) && InfoImplant[7].classList.add("js-add-triger__implants")
+};
