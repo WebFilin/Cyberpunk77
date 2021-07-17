@@ -1468,6 +1468,10 @@ svg.mask {
   width: 25%;
 }
 
+.info-guns-types-power h2 {
+  margin-left: 8px;
+}
+
 .info-guns-types-tex {
   width: 25%;
 }
@@ -1478,6 +1482,18 @@ svg.mask {
 
 .info-guns-types-hends {
   width: 25%;
+}
+
+.info-guns-types-tex h2 {
+  margin-left: 8px;
+}
+
+.info-guns-types-smart h2 {
+  margin-left: 8px;
+}
+
+.info-guns-types-hends h2 {
+  margin-left: 8px;
 }
 
 .info-guns-types-hends h2 {
