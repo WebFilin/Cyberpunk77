@@ -14,6 +14,7 @@ Welcome to Night City young padawan!
 
 Технологии
 1.	JavaScript
-2.	SASS/SCSS 
+2.	jQuery
+3.	SASS/SCSS 
 
 Мобильная вресия данного сайта находится в разработке
