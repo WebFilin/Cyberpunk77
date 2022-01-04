@@ -16,5 +16,6 @@ Welcome to Night City young padawan!
 1.	JavaScript
 2.	jQuery
 3.	SASS/SCSS 
+4.	Gulp
 
 Мобильная вресия данного сайта находится в разработке
