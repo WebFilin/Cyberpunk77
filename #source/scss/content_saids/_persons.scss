@@ -1,0 +1,179 @@
+$colorArrow: #337ab7;
+
+@mixin clearfix {
+   &:after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+}
+
+div[data-order="1"] {
+   background-color: yellow;
+}
+
+.slider-content {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   display: flex;
+
+   .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      @include clearfix;
+
+      &.active {
+         opacity: 1;
+      }
+
+      &.active .clip-svg {
+         clip-path: circle(120% at 90%);
+      }
+   }
+}
+
+.slider-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slider-container {
+   position: absolute;
+   z-index: 1;
+   transform: rotate(-90deg);
+   bottom: 1%;
+}
+
+li {
+   position: relative;
+   width: 20px;
+   height: 20px;
+   margin: 5px;
+   background: $colorArrow;
+   border-radius: 3rem;
+   opacity: 0.6;
+   list-style-type: none;
+
+   &.active {
+      opacity: 1;
+   }
+}
+
+.control-nav {
+   bottom: 10%;
+}
+
+// Стили текстат в слайдере
+.title-wrapper {
+   width: 250px;
+   position: absolute;
+   left: 10%;
+   bottom: 5%;
+   background-color: rgba($color: $colorArrow, $alpha: 0.6);
+   z-index: 10;
+
+   h2 {
+      margin: 5px 5px;
+      font-size: 40px;
+      color: maroon;
+   }
+
+   p {
+      padding: 5px 5px;
+      color: whitesmoke;
+      font-size: 23px;
+   }
+}
+
+.hide {
+   display: none;
+}
+
+// Навигация
+
+.back-button {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: $colorArrow;
+   opacity: 0.8;
+   border-radius: 50%;
+   margin-top: -50px;
+}
+
+.next-button {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: $colorArrow;
+   opacity: 0.8;
+   border-radius: 50%;
+}
+
+svg.mask {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.clip-svg {
+   clip-path: circle(25px at 90%);
+   width: 100%;
+   height: 100%;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+}
+
+.obl:hover,
+.obl:focus {
+   outline: none;
+   cursor: pointer;
+}
+
+.obl::before,
+.obl:after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 70px;
+   height: 70px;
+   border: 12px double whitesmoke;
+   border-radius: 50%;
+   content: "";
+   opacity: 0;
+   transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.obl:after {
+   width: 60px;
+   height: 60px;
+   border-width: 6px;
+   transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.obl:hover:before,
+.obl:hover:after {
+   animation: pulsate 1.2s infinite;
+}
+
+@keyframes pulsate {
+   30% {
+      opacity: 1;
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+   }
+
+   100% {
+      opacity: 0.3;
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(0.5);
+   }
+}

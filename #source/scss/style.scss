@@ -1,0 +1,56 @@
+@import "zerostyle.scss";
+@import "_cube_all.scss";
+@import "_buttom_all.scss";
+@import "_map_nav";
+@import "../scss/content_saids/sity";
+@import "../../#source/scss/content_saids/_persons";
+@import "../../#source/scss/content_saids/_guns";
+@import "../../#source/scss/content_saids/cyberware";
+@import "../../#source/scss/content_saids/cars";
+@import "../../#source/scss/content_saids/gangs";
+
+.ibg {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.ibg img {
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.wraper {
+   transform-style: preserve-3d;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.txt {
+   position: absolute;
+   top: 0px;
+   font-size: 40px;
+   top: 50%;
+}
+
+.arasaka__logo {
+   position: absolute;
+   width: 200px;
+   height: 30px;
+   background-image: url(../../img/arasaca.png);
+   background-size: cover;
+   background-position: 50% 50%;
+   bottom: 1%;
+   right: 1%;
+   opacity: 0.6;
+}

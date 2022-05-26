@@ -1,0 +1,361 @@
+$colorArrow: #337ab7;
+
+._3dface__back {
+   background-image: url(../../../img/cyberware/fog.jpg);
+   background-size: cover;
+}
+
+.wraper__content-all {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.body__cyberware {
+   display: none;
+   position: absolute;
+   right: 10%;
+   width: 400px;
+   height: 740px;
+   background-image: url(../../../img/cyberware/imagine-lion-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50% 50%;
+   transform: rotate(-180deg);
+}
+
+.items__body {
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: $colorArrow;
+   opacity: 0;
+   border-radius: 50%;
+   animation: showItems both;
+}
+
+.items__body:after,
+.items__body:before {
+   animation: pulsate 1.5s 9.5;
+}
+
+.items__body.items__smartlink {
+   top: 435px;
+   left: 110px;
+}
+
+.items__body.items__second-heart {
+   top: 265px;
+   left: 140px;
+}
+
+.items__body.items__kiroshi-optics {
+   top: 145px;
+   left: 220px;
+}
+
+.items__body.items__reiforsed-tendos {
+   top: 580px;
+   left: 180px;
+}
+.items__body.items__titanium-bones {
+   top: 320px;
+   left: 180px;
+}
+.items__body.items__reflex-tuner {
+   top: 145px;
+   left: 130px;
+}
+.items__body.items__netwatch {
+   top: 360px;
+   left: 95px;
+}
+
+.cyber__info-more-btn {
+   position: absolute;
+   left: 200px;
+   width: auto;
+   height: 50px;
+   background-color: rgba($colorArrow, 0.5);
+
+   line-height: 40px;
+   padding: 0px 8px;
+   cursor: pointer;
+   text-transform: uppercase;
+   clip-path: polygon(0% 17%, 5% 2%, 93% 1%, 100% 16%, 100% 53%, 94% 72%, 47% 74%, 35% 100%, 7% 100%, 0% 82%);
+   .more__url {
+      color: white;
+   }
+   &:hover {
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-delay: 0s;
+      transition-timing-function: ease;
+      padding: 0px 20px;
+      background-color: $colorArrow;
+   }
+   &:visited {
+      color: rgba(white, 1);
+   }
+}
+
+.cyber__info-content {
+   overflow: hidden;
+   width: 500px;
+   height: 400px;
+   font-size: 18px;
+   clip-path: polygon(0% 0%, 79% 0%, 100% 22%, 100% 100%, 30% 100%, 0% 62%);
+   color: whitesmoke;
+   p {
+      padding: 5px 5px;
+      line-height: 1.2;
+   }
+
+   h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 5px 5px 0px 0px;
+      margin-right: 100px;
+   }
+}
+
+.cyber-info__wraper-bottom {
+   position: relative;
+   overflow: hidden;
+   width: 500px;
+   height: 300px;
+   p {
+      margin-left: 10px;
+      padding: 5px 5px;
+      text-align: left;
+   }
+}
+
+.cyber-info__block-left {
+   float: right;
+   shape-outside: polygon(0% 0%, 1% 0%, 100% 80%);
+   clip-path: polygon(0% 0%, 0% 0%, 100% 80%);
+   height: 100px;
+   width: 100px;
+   shape-margin: 5px;
+}
+
+.cyber-info__block-right {
+   float: left;
+   height: 200px;
+   width: 120px;
+   shape-outside: polygon(-1px 49px, 13px 62px, 152px 206px, 0px 200px);
+   clip-path: polygon(0 0%, 0% 100%, 100% 100%);
+   shape-margin: 20px;
+}
+
+.cyber__info {
+   position: relative;
+   right: -100%;
+   top: 20%;
+}
+
+.cyber-smartlink {
+   display: none;
+}
+.cyber-info__content-img-smartlink {
+   float: left;
+   shape-outside: polygon(0px 0px, 172px 1px, 166px 69px, 125px 78px, 88px 138px, 56px 146px, 0px 170px);
+}
+
+.cyber-kiroshi-optics {
+   display: none;
+}
+
+.cyber-info__content-img-kiroshi-optics {
+   float: left;
+   shape-outside: polygon(0px 0px, 200px 0px, 200px 88px, 159px 118px, 104px 144px, 0px 200px);
+}
+
+.cyber-reiforsed-tendos {
+   display: none;
+}
+
+.cyber-info__content-img-reiforsed-tendos {
+   margin-top: 10px;
+   float: left;
+   shape-outside: polygon(0px 0px, 76px 0px, 86px 12px, 101px 32px, 157px 105px, 157px 159px, 2px 159px);
+}
+
+.cyber-titanium-bones {
+   display: none;
+}
+
+.cyber-info__content-titanium-img-bones {
+   margin-top: 5px;
+   float: left;
+   shape-outside: polygon(
+      45px 97px,
+      22px 78px,
+      0px 0px,
+      96px 0px,
+      115px 53px,
+      164px 84px,
+      164px 166px,
+      78px 151px,
+      42px 118px
+   );
+}
+.cyber-reflex-tuner {
+   display: none;
+}
+
+.cyber-info__content-img-reflex-tuner {
+   float: left;
+   shape-outside: polygon(0px 0px, 160px 0px, 155px 93px, 137px 139px, 115px 170px, 0px 170px);
+}
+.cyber-netwatch {
+   display: none;
+}
+
+.cyber-info__content-img-cyber-netwatch {
+   float: left;
+   shape-outside: polygon(
+      5px 166px,
+      4px 53px,
+      0px 0px,
+      60px 0px,
+      92px 34px,
+      162px 96px,
+      162px 170px,
+      79px 169px,
+      22px 166px
+   );
+}
+
+.cyber-second-heart {
+   display: none;
+}
+
+.cyber-info__content-img-second-heart {
+   margin-top: 5px;
+   float: left;
+   shape-outside: polygon(0px 107px, 0px 0px, 168px 0px, 168px 62px, 138px 122px, 168px 168px, 44px 168px, 2px 169px);
+}
+svg.mask {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.clip-svg {
+   clip-path: circle(25px at 90%);
+   width: 100%;
+   height: 100%;
+   transition-property: all;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+}
+
+.items__body:hover,
+.items__body:focus {
+   outline: none;
+   cursor: pointer;
+}
+
+.items__body:before,
+.items__body:after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 50px;
+   height: 50px;
+   border: 12px double rgb(207, 84, 36);
+   border-radius: 50%;
+   content: "";
+   opacity: 0;
+   transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.items__body:after {
+   width: 60px;
+   height: 60px;
+   border-width: 6px;
+   transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.items__body:hover:before,
+.items__body:hover:after {
+   animation: pulsate 1.2s infinite;
+}
+
+@keyframes pulsate {
+   30% {
+      opacity: 1;
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+   }
+
+   100% {
+      opacity: 0.3;
+      -webkit-transform: translateX(-50%) translateY(-50%) scale(0.5);
+   }
+}
+
+.js-add-triger__implants {
+   display: block !important;
+   animation-name: flipInfoBlock;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+}
+
+.js-add-cyberware {
+   display: block;
+   animation-name: showBody;
+   animation-duration: 0.7s;
+}
+
+@keyframes showBody {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes flipInfoBlock {
+   0% {
+      transform: rotate3d(0, 1, 0, 90deg);
+   }
+
+   100% {
+      transform: rotate3d(1, 0, 0, 0deg);
+   }
+}
+
+@for $items from 0 through 7 {
+   .items__body {
+      animation-delay: 3s;
+      &:nth-child(#{$items}) {
+         animation-delay: $items * (2s);
+      }
+
+      &:after {
+         animation-delay: $items * (0.3s);
+      }
+
+      &::before {
+         animation-delay: $items * (0.2s);
+      }
+   }
+}
+
+@keyframes showItems {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}

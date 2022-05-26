@@ -1,0 +1,366 @@
+$colorArrow: #337ab7;
+$colorBorder: yellowgreen;
+$cubeWidth: 98vw;
+$cubeHeight: 97vh;
+
+._3dface__bottom {
+   width: $cubeWidth;
+   height: $cubeHeight;
+}
+
+.militech {
+   position: absolute;
+   top: 1%;
+   left: 1%;
+   width: 100px;
+   height: 100px;
+   background-image: url(../../../img/guns/Militek.png);
+   background-size: cover;
+}
+
+.content__items-guns {
+   display: none;
+   transform: rotate(90deg);
+   margin-left: -55%;
+   position: absolute;
+}
+
+.wraper__rhomb-guns {
+   max-width: 1200px;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-gap: 1vmin;
+}
+
+.items__guns {
+   overflow: hidden;
+   font-family: Tahoma, Verdana, sans-serif;
+   font-size: 16px;
+   line-height: 150px;
+   color: honeydew;
+   width: 150px;
+   height: 150px;
+   background-color: rgba($colorArrow, 0.6);
+   grid-column: span 2;
+   margin-bottom: -50%;
+   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+   animation: 2s ease-in-out both animo__view-items;
+   &:nth-child(7n + 1) {
+      grid-column: 2 / span 2;
+   }
+   h2 {
+      transform: perspective(20px) translateZ(0) rotate(-90deg);
+   }
+}
+
+.all__info-guns {
+   display: none;
+   overflow: scroll;
+   position: fixed;
+   right: 10%;
+   width: 50%;
+   height: 80%;
+   background-color: rgba($colorArrow, 0.5);
+   font-size: 18px;
+   color: whitesmoke;
+   z-index: 10;
+   animation: showGunsAll 5s forwards;
+
+   &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+   }
+
+   h2 {
+      font-weight: bold;
+      color: whitesmoke;
+      padding: 10px 5px;
+      margin-bottom: -10px;
+   }
+}
+
+.js-add__triger-info_guns {
+   display: none;
+}
+
+.js-add-all__info-guns {
+   display: block;
+}
+
+.js-add-items-guns {
+   display: block;
+}
+
+.all__info-guns-title {
+   width: 100%;
+   height: auto;
+   text-align: left;
+   p {
+      margin: 15px;
+   }
+   h2 {
+      text-align: center;
+      border-bottom: 2px solid $colorBorder;
+   }
+}
+.all__info-guns-colums {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+   h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid $colorBorder;
+      width: 90%;
+   }
+   p {
+      text-align: left;
+      padding: 10px 15px;
+   }
+}
+.info-guns__colums-cult {
+   width: 33.33%;
+}
+.info-guns__colums-mod {
+   width: 33.33%;
+}
+.info-guns__colums-cuber {
+   width: 33.33%;
+}
+
+.info-guns-types-title {
+   margin-top: 17px;
+   border-bottom: 2px solid $colorBorder;
+   border-top: 2px solid $colorBorder;
+   h2 {
+      text-align: center;
+      margin-bottom: -2px;
+   }
+}
+
+.info-guns-types {
+   margin-top: 15px;
+   display: flex;
+   justify-content: center;
+   p {
+      text-align: left;
+      padding: 10px 15px;
+   }
+   h2 {
+      margin-bottom: 5px;
+      border-bottom: 2px solid $colorBorder;
+      width: 90%;
+   }
+}
+
+.info-guns-types-power {
+   width: 25%;
+}
+.info-guns-types-tex {
+   width: 25%;
+}
+.info-guns-types-smart {
+   width: 25%;
+}
+.info-guns-types-hends {
+   width: 25%;
+}
+
+.info__guns-displ {
+   overflow: hidden;
+   position: absolute;
+   right: 7%;
+   width: 50%;
+   height: 90%;
+   bottom: 0px;
+}
+
+.info__guns-all {
+   position: absolute;
+   width: 100%;
+   transform: translateX(-110%);
+   h2 {
+      display: inline-block;
+      left: 0px;
+      color: whitesmoke;
+   }
+}
+
+.info__guns {
+   background-color: rgba($colorArrow, 0.6);
+   a:visited {
+      color: $colorArrow;
+   }
+}
+
+.img__guns {
+   float: left;
+   padding: 0px 10px;
+}
+
+.info__txt-guns {
+   top: 0px;
+   color: whitesmoke;
+   padding: 15px 10px;
+   font-size: 25px;
+   text-align: left;
+   line-height: 1.2em;
+}
+
+.info__general {
+   margin-top: 10px;
+   font-size: 18px;
+   text-align: left;
+   color: whitesmoke;
+   padding-bottom: 10px;
+   span {
+      color: rgb(210, 231, 23);
+      padding: 5px 0px;
+   }
+   p {
+      padding: 5px 25px;
+   }
+}
+
+.btn__more {
+   left: 25%;
+   position: absolute;
+   margin-top: 10px;
+   background-color: rgba(grey, 0.5);
+   padding: 5px 15px;
+   padding-bottom: 10px;
+   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+   cursor: pointer;
+}
+
+.btn__more:hover,
+.btn__more:active,
+.btn__more:focus {
+   color: white;
+}
+
+.btn__more:before {
+   opacity: 0.6;
+   content: "";
+   position: absolute;
+   top: 0;
+   right: -50px;
+   bottom: 0;
+   left: 0;
+   border-right: 80px solid transparent;
+   border-top: 80px solid $colorArrow;
+   transition: transform 0.8s;
+   transform: translateX(-100%);
+   z-index: -1;
+}
+
+.btn__more:hover:before,
+.btn__more:active:before,
+.btn__more:focus:before {
+   transform: translateX(0);
+}
+
+//  залитие иконок управления
+.items__guns:hover,
+.items__guns:active,
+.items__guns:focus {
+   cursor: pointer;
+}
+
+.items__guns:before {
+   content: "";
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: 0;
+   background-color: rgba($colorArrow, 1);
+   transition-duration: 0.5s;
+   transform: translateY(100%);
+   z-index: -1;
+}
+
+.items__guns:hover:before,
+.items__guns:active:before,
+.items__guns:focus:before {
+   transform: translateX(0);
+}
+
+.info__guns.assault__rifles {
+   display: none;
+}
+
+.info__guns.machine__guns {
+   display: none;
+}
+
+.info__guns.melee {
+   display: none;
+}
+.info__guns.sniper__rifles {
+   display: none;
+}
+.info__guns.revolvers {
+   display: none;
+}
+.info__guns.shotguns {
+   display: none;
+}
+.info__guns.cyberware {
+   display: none;
+}
+.info__guns.submachine__guns {
+   display: none;
+}
+.info__guns.precision__rifles {
+   display: none;
+}
+.info__guns.pistols {
+   display: none;
+}
+
+.js-add-triger__info-guns {
+   display: block !important;
+   animation-name: infoGuns;
+   animation-duration: 1.5s;
+   animation-fill-mode: both;
+}
+
+@keyframes infoGuns {
+   100% {
+      transform: translateX(110%);
+   }
+}
+
+@for $i from 0 through 10 {
+   .items__guns {
+      &:nth-child(#{$i}) {
+         animation-delay: $i * (0.3s);
+      }
+   }
+}
+
+@keyframes animo__view-items {
+   0% {
+      opacity: 0;
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+
+      transform: scale(1);
+   }
+}
+
+@keyframes showGunsAll {
+   0% {
+      opacity: 0;
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}

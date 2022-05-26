@@ -1,0 +1,100 @@
+// Стили движка куба и его анимации
+
+// Размеры куба.
+$cubeWidth: 98vw;
+$cubeHeight: 97vh;
+$cubeDepth: $cubeHeight;
+$flip: 2.5s;
+
+/* 3D Cube управление поворотом через переменные */
+._3dbox {
+   display: block;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   transform-style: preserve-3d;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition-duration: $flip;
+   transform: scale(var(--flipZoom)) rotate3d(var(--flipX), var(--flipY), var(--flipZ), (var(--flipDeg)));
+
+   // transform: rotateX(-90deg);
+
+   // переменные управления поворотом
+   --flipX: ;
+   --flipY: ;
+   --flipZ: ;
+   --flipDeg: ;
+   --flipZoom: ;
+}
+
+._3dface {
+   overflow: hidden;
+   position: absolute;
+   opacity: 1;
+   font-size: 40px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backface-visibility: hidden;
+   border: 2px solid grey;
+}
+
+._3dface__front {
+   width: $cubeWidth;
+   height: $cubeHeight;
+   transform: translate3d(0, 0, $cubeDepth / 2);
+}
+
+._3dface__top {
+   width: $cubeWidth;
+   height: $cubeDepth;
+   transform: rotateX(90deg) translate3d(0, 0, $cubeHeight / 2);
+}
+
+._3dface__bottom {
+   width: $cubeWidth;
+   height: $cubeDepth;
+   transform: rotateX(-90deg) translate3d(0, 0, $cubeHeight / 2);
+}
+
+._3dface__back {
+   width: $cubeWidth;
+   height: $cubeHeight;
+   transform: rotateY(180deg) translate3d(0, 0, $cubeDepth / 2);
+}
+
+._3dface__left {
+   width: $cubeDepth;
+   height: $cubeHeight;
+   transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2);
+   // background-color: yellow;
+}
+
+._3dface__right {
+   width: $cubeDepth;
+   height: $cubeHeight;
+   transform: rotateY(90deg) translate3d(0, 0, $cubeWidth / 2);
+}
+
+.js-animo_SizeHor {
+   animation-name: sizeHor;
+   animation-duration: $flip;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: 1;
+   animation-fill-mode: both;
+}
+
+@keyframes sizeHor {
+   0% {
+      @for $i from 0 through 98 {
+         width: $i * (100ms);
+      }
+   }
+
+   100% {
+      width: $cubeWidth;
+   }
+}
