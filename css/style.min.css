@@ -1116,7 +1116,7 @@ div[data-order="1"] {
 
 .slider-content .slide.active .clip-svg {
   -webkit-clip-path: circle(120% at 90%);
-  clip-path: circle(120% at 90%);
+  clip-path: circle(200% at 90%);
 }
 
 .slider-wrapper {
@@ -1266,6 +1266,106 @@ svg.mask {
 .obl:hover:after {
   -webkit-animation: pulsate 1.2s infinite;
   animation: pulsate 1.2s infinite;
+}
+
+.slide-content-person__v{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/V.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__alt-caningem{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/alt_caningem.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__dexter-deshawn{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/Dexter__DeShawn.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__jack-yels{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/jack__yels.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__jydit-alvares{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/jydit__alvares.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__roys{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/roys.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__sascwotch{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/Sascwotch.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__silverhead{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/silverhead.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__silverhead{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/silverhead.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
+}
+
+.slide-content-person__vicktor{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: url(../img/person/vicktor.webp);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: contain;
 }
 
 @keyframes pulsate {
