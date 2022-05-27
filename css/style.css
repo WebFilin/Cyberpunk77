@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.buttom__all {
+.buttom__all-wraper {
   margin-top: 50%;
   z-index: 50;
 }
@@ -2949,7 +2949,7 @@ svg.mask {
   position: absolute;
   width: 200px;
   height: 30px;
-  background-image: url(../../img/arasaca.png);
+  background-image: url(../../img/arasaca.webp);
   background-size: cover;
   background-position: 50% 50%;
   bottom: 1%;

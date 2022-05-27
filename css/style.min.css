@@ -1110,8 +1110,8 @@ a.obl-city:hover:after {
 }
 
 .slider-content .slide.active .clip-svg {
-  -webkit-clip-path: circle(120% at 90%);
-  clip-path: circle(200% at 90%);
+  -webkit-clip-path: circle(1900% at 90%);
+  clip-path: circle(220% at 90%);
 }
 
 .slider-wrapper {

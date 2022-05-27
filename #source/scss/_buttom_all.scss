@@ -1,0 +1,185 @@
+$sizeBtn: 50px;
+$colorArrow: #337ab7;
+
+.buttom__all-wraper {
+   margin-top: 50%;
+   z-index: 50;
+}
+
+.buttom {
+   overflow: hidden;
+   position: fixed;
+   width: $sizeBtn;
+   height: $sizeBtn;
+   border: 2px solid rgb(128, 37, 37);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.buttom.up {
+   top: 2.5%;
+   right: 50%;
+   &:hover {
+      .arrow-up {
+         animation: arrowFocusUp;
+         @extend %arrow-animo__focus;
+      }
+   }
+}
+.buttom.down {
+   bottom: 2.5%;
+   right: 50%;
+   &:hover {
+      .arrow-down {
+         animation: arrowFocusDown;
+         @extend %arrow-animo__focus;
+      }
+   }
+}
+.buttom.left {
+   left: 2%;
+   top: 50%;
+   &:hover {
+      .arrow-left {
+         animation: arrowFocusLeft;
+         @extend %arrow-animo__focus;
+      }
+   }
+}
+.buttom.right {
+   top: 50%;
+   right: 2%;
+   &:hover {
+      .arrow-right {
+         animation: arrowFocusRight;
+         @extend %arrow-animo__focus;
+      }
+   }
+}
+
+.arrow-up {
+   margin-top: 5px;
+   @extend %arrow-animo;
+   transform: rotate(180deg);
+}
+
+.arrow-down {
+   margin-top: -5px;
+   @extend %arrow-animo;
+}
+
+.arrow-left {
+   margin-right: -5px;
+   @extend %arrow-animo;
+   transform: rotate(90deg);
+}
+
+.arrow-right {
+   margin-right: 5px;
+   @extend %arrow-animo;
+   transform: rotate(-90deg);
+}
+
+%arrow-animo__focus {
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: 1.5;
+}
+
+%arrow-animo {
+   position: absolute;
+   span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-bottom: 5px solid $colorArrow;
+      border-right: 5px solid $colorArrow;
+      transform: rotate(45deg);
+      margin: -5px;
+      animation: arrow;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1.5;
+   }
+   span:nth-child(2) {
+      animation-delay: -0.2s;
+   }
+   span:nth-child(3) {
+      animation-delay: -0.4s;
+   }
+}
+
+@keyframes arrow {
+   0% {
+      opacity: 0;
+      transform: translate(0, -20px) rotate(45deg);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: translate(0, 20px) rotate(45deg);
+   }
+}
+
+@keyframes arrowFocusUp {
+   0% {
+      opacity: 0;
+      transform: translate(0, 20px) rotate(180deg);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: translate(0, -20px) rotate(180deg);
+   }
+}
+
+@keyframes arrowFocusDown {
+   0% {
+      opacity: 0;
+      transform: translate(0, -20px) rotate(0deg);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: translate(0, 20px) rotate(0deg);
+   }
+}
+
+@keyframes arrowFocusLeft {
+   0% {
+      opacity: 0;
+      transform: translate(20px, 0px) rotate(90deg);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: translate(-20px, 0px) rotate(90deg);
+   }
+}
+
+@keyframes arrowFocusRight {
+   0% {
+      opacity: 0;
+      transform: translate(-20px, 0px) rotate(-90deg);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: translate(20px, 0px) rotate(-90deg);
+   }
+}
