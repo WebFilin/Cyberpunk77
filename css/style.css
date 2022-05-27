@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ._3dface {
-  overflow: hidden;
   position: absolute;
   opacity: 1;
   font-size: 40px;
