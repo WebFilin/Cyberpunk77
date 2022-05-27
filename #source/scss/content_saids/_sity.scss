@@ -46,7 +46,7 @@ $colorArrow: #337ab7;
 
 .wraper__sity-btn{
    position: relative;
- width: 100%;
+ width: 90%;
  height: auto;
  display: flex;
  justify-content: center;
@@ -225,3 +225,33 @@ a.obl-city:hover:after {
       -webkit-transform: translateX(-50%) translateY(-50%) scale(0.5);
    }
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1400px) {
+   .items:nth-child(-n+6){
+      margin-bottom: -30px;
+   }
+}
+/* Landscape tablets and medium desktops */
+@media (min-width: 900px) and (max-width: 1199px) {
+   .items:nth-child(-n+6){
+      margin-bottom: -30px;
+   }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 760px) and (max-width: 991px) {
+   .items{
+     width: 145px;
+     height: 145px;
+   }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .items{
+      width: 130px;
+      height: 130px;
+    }
+}
+
+
