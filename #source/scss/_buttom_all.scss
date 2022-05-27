@@ -2,8 +2,7 @@ $sizeBtn: 50px;
 $colorArrow: #337ab7;
 
 .buttom__all-wraper {
-   margin-top: 50%;
-   z-index: 50;
+   z-index: 20;
 }
 
 .buttom {
@@ -22,7 +21,7 @@ $colorArrow: #337ab7;
 }
 
 .buttom.up {
-   top: 2.5%;
+   top: 3%;
    right: 50%;
    &:hover {
       .arrow-up {
@@ -32,7 +31,7 @@ $colorArrow: #337ab7;
    }
 }
 .buttom.down {
-   bottom: 2.5%;
+   bottom: 5%;
    right: 50%;
    &:hover {
       .arrow-down {
