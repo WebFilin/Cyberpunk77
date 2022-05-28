@@ -40,7 +40,6 @@ $colorTxtTitleCars: azure;
 
 .more-cars {
   margin-top: 20%;
-  // position: absolute;
   grid-column: 1/1;
   grid-row: 4/4;
   text-align: right;
@@ -74,9 +73,10 @@ $colorTxtTitleCars: azure;
   grid-column: 2/4;
   grid-row: 3/5;
   background-image: url(../../../img/cars/yaiba-kusanagi-ct-3x.webp);
-  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
+
   &:hover ~ .info-moto {
     animation-name: moto;
     animation-duration: 2s;
@@ -128,6 +128,8 @@ $colorTxtTitleCars: azure;
   background-image: url(../../../img/cars/porshe.webp);
   background-size: cover;
   background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   &:hover ~ .info-porsh {
     animation-name: porsh;
@@ -150,11 +152,12 @@ $colorTxtTitleCars: azure;
 
 .block-qaddra {
   width: 100%;
-  height: 180%;
+  height: 200%;
   grid-column: 1/2;
-  grid-row: 3/3;
+  grid-row: 3/4;
   background-image: url(../../../img/cars/Cyberpunk2077_QuadraType66_Nomad-948-1080.webp);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
 
   &:hover ~ .info-qaddra {
@@ -180,9 +183,12 @@ $colorTxtTitleCars: azure;
   width: 100%;
   height: 100%;
   grid-column: 2/2;
+  grid-row: 2/3;
   background-image: url(../../../img/cars/VillefortAlvarado.webp);
   background-size: cover;
   background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   &:hover ~ .info-limo {
     animation-name: limo;
@@ -211,6 +217,9 @@ $colorTxtTitleCars: azure;
   background-image: url(../../../img/cars/1607933951_rayfield-caliburn.webp);
   background-size: cover;
   background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
   &:hover ~ .info-sportcar {
     animation-name: sportcar;
     animation-duration: 2s;
