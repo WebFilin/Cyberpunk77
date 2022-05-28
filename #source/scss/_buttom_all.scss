@@ -22,7 +22,7 @@ $colorArrow: #337ab7;
 
 .buttom.up {
    top: 3%;
-   right: 50%;
+   right: 49%;
    &:hover {
       .arrow-up {
          animation: arrowFocusUp;
@@ -32,7 +32,7 @@ $colorArrow: #337ab7;
 }
 .buttom.down {
    bottom: 5%;
-   right: 50%;
+   right: 49%;
    &:hover {
       .arrow-down {
          animation: arrowFocusDown;
@@ -185,18 +185,42 @@ $colorArrow: #337ab7;
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+   .buttom.down{
+      right: 48.5%;
+   }
 
+   .buttom.up{
+      right: 48.5%;
+   }
 }
+
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+   .buttom.down{
+      right: 48%;
+   }
 
+   .buttom.up{
+      right: 48%;
+   }
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+   .buttom.down{
+      right: 47.5%;
+   }
+   .buttom.up{
+      right: 47.5%;
+   }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+   .buttom.down{
+      right: 47.5%;
+   }
 
+   .buttom.up{
+      right: 47.5%;
+   }
 }
 
