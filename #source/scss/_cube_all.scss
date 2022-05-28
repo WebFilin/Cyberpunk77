@@ -4,7 +4,7 @@
 $cubeWidth: 98vw;
 $cubeHeight: 97vh;
 $cubeDepth: $cubeHeight;
-$flip: 2.5s;
+$flip: .8s;
 
 /* 3D Cube управление поворотом через переменные */
 ._3dbox {
@@ -19,7 +19,7 @@ $flip: 2.5s;
    transition-duration: $flip;
    transform: scale(var(--flipZoom)) rotate3d(var(--flipX), var(--flipY), var(--flipZ), (var(--flipDeg)));
 
-   // transform: rotateX(-90deg);
+   transform: rotateX(-90deg);
 
    // переменные управления поворотом
    --flipX: ;
@@ -85,6 +85,8 @@ $flip: 2.5s;
    animation-iteration-count: 1;
    animation-fill-mode: both;
 }
+
+
 
 @keyframes sizeHor {
    0% {

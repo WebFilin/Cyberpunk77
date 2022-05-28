@@ -8,9 +8,9 @@ $colorArrow: #337ab7;
    }
 }
 
-div[data-order="1"] {
-   background-color: yellow;
-}
+// div[data-order="1"] {
+//    background-color: yellow;
+// }
 
 .slider-content {
    position: relative;
@@ -31,7 +31,7 @@ div[data-order="1"] {
       }
 
       &.active .clip-svg {
-         clip-path: circle(120% at 90%);
+         clip-path: circle(150% at 90%);
       }
    }
 }
@@ -115,6 +115,66 @@ li {
    background: $colorArrow;
    opacity: 0.8;
    border-radius: 50%;
+}
+
+.slide-content {
+   width: 100%;
+   height: 100%;
+   background-position: 50% 50%;
+   background-size: cover;
+}
+
+.person__v{
+   background-image: url(../../../img/person/V.webp);
+}
+
+.person__alt-caningem{
+   background-image: url(../../../img/person/alt_caningem.webp);
+}
+
+.person__dexter-deshawn{
+   background-image: url(../../../img/person/Dexter__DeShawn.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.person__jack-yels{
+   background-image: url(../../../img/person/jack__yels.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.person__jydit-alvares{
+   background-image: url(../../../img/person/jydit__alvares.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.person__roys{
+   background-image: url(../../../img/person/roys.webp);
+}
+
+.person__sascwotch{
+   background-image: url(../../../img/person/Sascwotch.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.person__silverhead{
+   background-image: url(../../../img/person/silverhead.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.person__vicktor{
+   background-image: url(../../../img/person/vicktor.webp);
+  
+}
+
+.person__violet{
+   background-image: url(../../../img/person/violet.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 svg.mask {
