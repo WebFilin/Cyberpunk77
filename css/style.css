@@ -1183,27 +1183,23 @@ a.obl-city:hover:after {
   z-index: 1;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  bottom: 2%;
-  left: 51%;
+  bottom: -10%;
+  left: 49%;
 }
 
-li {
+.control-nav li {
   position: relative;
-  width: 1vw;
-  height: 1vw;
+  width: 2vw;
+  height: 2vw;
   margin: 5px;
   background: #337ab7;
-  border-radius: 3rem;
+  border-radius: 50%;
   opacity: 0.6;
   list-style-type: none;
 }
 
-li.active {
+.control-nav li.active {
   opacity: 1;
-}
-
-.control-nav {
-  bottom: 10%;
 }
 
 .title-wrapper {
@@ -1211,7 +1207,7 @@ li.active {
   height: auto;
   position: absolute;
   left: 10%;
-  bottom: 5%;
+  bottom: 6%;
   background-color: rgba(51, 122, 183, 0.6);
   z-index: 10;
 }
@@ -1233,17 +1229,16 @@ li.active {
 }
 
 .back-button {
-  width: 2vw;
-  height: 2vw;
+  width: 3vw;
+  height: 3vw;
   background: #337ab7;
   opacity: 0.8;
   border-radius: 50%;
-  margin-top: -50px;
 }
 
 .next-button {
-  width: 2vw;
-  height: 2vw;
+  width: 3vw;
+  height: 3vw;
   background: #337ab7;
   opacity: 0.8;
   border-radius: 50%;
@@ -1338,15 +1333,15 @@ svg.mask {
 .obl::before,
 .obl:after {
   position: absolute;
-  width: 3vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 3.5vw;
   border: 12px double whitesmoke;
   border-radius: 50%;
   content: "";
   opacity: 0;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
           transform: translateX(-50%) translateY(-50%) scale(0.2);
-  margin-top: 1vw;
+  margin-top: 1.55vw;
 }
 
 .obl:after {
@@ -1378,7 +1373,47 @@ svg.mask {
 @media (max-width: 1200px) {
   .title-wrapper {
     width: 20vw;
-    left: 15%;
+    left: 12%;
+  }
+  .title-wrapper h2 {
+    font-size: 28px;
+  }
+  .title-wrapper p {
+    font-size: 20px;
+  }
+  .control-nav li {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider-container {
+    bottom: -5%;
+  }
+  .back-button {
+    width: 4vw;
+    height: 4vw;
+  }
+  .next-button {
+    width: 4vw;
+    height: 4vw;
+  }
+  .control-nav li {
+    width: 1.7vw;
+    height: 1.7vw;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-container {
+    bottom: 1%;
+  }
+  .title-wrapper {
+    width: 20vw;
+    left: 13%;
   }
   .title-wrapper h2 {
     font-size: 28px;
@@ -1387,49 +1422,45 @@ svg.mask {
     font-size: 20px;
   }
   .back-button {
-    width: 15px;
-    height: 15px;
+    width: 4vw;
+    height: 4vw;
   }
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .slider-container {
-    bottom: 4%;
+  .next-button {
+    width: 4vw;
+    height: 4vw;
   }
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-  .slider-container {
-    bottom: 5%;
-  }
-  .title-wrapper {
-    width: 20vw;
-    left: 16%;
-  }
-  .title-wrapper h2 {
-    font-size: 28px;
-  }
-  .title-wrapper p {
-    font-size: 20px;
+  .control-nav li {
+    width: 1.5vw;
+    height: 1.5vw;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .slider-container {
-    bottom: 6%;
+    bottom: 2%;
   }
   .title-wrapper {
-    width: 20vw;
-    left: 16%;
+    width: 18vw;
+    left: 15.5%;
   }
   .title-wrapper h2 {
     font-size: 25px;
   }
   .title-wrapper p {
     font-size: 16px;
+  }
+  .back-button {
+    width: 4vw;
+    height: 4vw;
+  }
+  .next-button {
+    width: 4vw;
+    height: 4vw;
+  }
+  .control-nav li {
+    width: 1.5vw;
+    height: 1.5vw;
   }
 }
 

@@ -36,27 +36,25 @@ $colorArrow: #337ab7;
    position: absolute;
    z-index: 1;
    transform: rotate(-90deg);
-   bottom: 2%;
-   left: 51%;
-}
-
-li {
-   position: relative;
-   width:1vw;
-   height: 1vw;
-   margin: 5px;
-   background: $colorArrow;
-   border-radius: 3rem;
-   opacity: 0.6;
-   list-style-type: none;
-
-   &.active {
-      opacity: 1;
-   }
+   bottom: -10%;
+   left: 49%;
 }
 
 .control-nav {
-   bottom: 10%;
+  li {
+      position: relative;
+      width:2vw;
+      height: 2vw;
+      margin: 5px;
+      background: $colorArrow;
+      border-radius: 50%;
+      opacity: 0.6;
+      list-style-type: none;
+   
+      &.active {
+         opacity: 1;
+      }
+   }
 }
 
 // Стили текстат в слайдере
@@ -65,7 +63,7 @@ li {
    height: auto;
    position: absolute;
    left: 10%;
-   bottom: 5%;
+   bottom: 6%;
    background-color: rgba($color: $colorArrow, $alpha: 0.6);
    z-index: 10;
 
@@ -88,18 +86,16 @@ li {
 
 // Навигация
 .back-button {
-   width: 2vw;
-   height: 2vw;
+   width: 3vw;
+   height: 3vw;
    background: $colorArrow;
    opacity: 0.8;
    border-radius: 50%;
-   margin-top: -50px;
-
 }
 
 .next-button {
-   width: 2vw;
-   height: 2vw;
+   width: 3vw;
+   height: 3vw;
    background: $colorArrow;
    opacity: 0.8;
    border-radius: 50%;
@@ -191,14 +187,14 @@ svg.mask {
 .obl::before,
 .obl:after {
    position: absolute;
-   width: 3vw;
-   height: 3vw;
+   width: 3.5vw;
+   height: 3.5vw;
    border: 12px double whitesmoke;
    border-radius: 50%;
    content: "";
    opacity: 0;
    transform: translateX(-50%) translateY(-50%) scale(0.2);
-   margin-top: 1vw;
+   margin-top: 1.55vw;
 }
 
 .obl:after {
@@ -228,8 +224,8 @@ svg.mask {
 /* Large desktops and laptops */
 @media (max-width: 1200px) {
    .title-wrapper {
-      width: 20vw;
-         left: 15%;
+         width: 20vw;
+         left: 12%;
       h2 {
          font-size: 28px;
       }
@@ -239,28 +235,47 @@ svg.mask {
       }
    }
 
-   .back-button{
-      width: 15px;
-   height: 15px;
+   .control-nav {
+      li {
+         width: 2.5vw;
+         height: 2.5vw;
+      }
    }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
    .slider-container{
-      bottom: 4%;
+      bottom: -5%;
+   }
+
+     .back-button {
+      width: 4vw;
+      height: 4vw;
+   }
+
+   .next-button{
+      width: 4vw;
+      height: 4vw;
+   }
+
+   .control-nav {
+      li {
+         width: 1.7vw;
+         height: 1.7vw;
+      }
    }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
    .slider-container{
-      bottom: 5%;
+      bottom: 1%;
    }
 
    .title-wrapper {
-      width: 20vw;
-         left: 16%;
+         width: 20vw;
+         left: 13%;
       h2 {
          font-size: 28px;
       }
@@ -270,17 +285,32 @@ svg.mask {
       }
    }
 
+   .back-button {
+      width: 4vw;
+      height: 4vw;
+   }
+
+   .next-button{
+      width: 4vw;
+      height: 4vw;
+   }
+   .control-nav {
+      li {
+         width: 1.5vw;
+         height: 1.5vw;
+      }
+   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
    .slider-container{
-      bottom: 6%;
+      bottom: 2%;
    }
 
    .title-wrapper {
-      width: 20vw;
-         left: 16%;
+         width: 18vw;
+         left: 15.5%;
       h2 {
          font-size: 25px;
       }
@@ -289,4 +319,22 @@ svg.mask {
          font-size: 16px;
       }
    }
+
+   .back-button {
+      width: 4vw;
+      height: 4vw;
+   }
+
+   .next-button{
+      width: 4vw;
+      height: 4vw;
+   }
+
+   
+.control-nav {
+   li {
+      width: 1.5vw;
+      height: 1.5vw;
+   }
+}
 }
