@@ -808,6 +808,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../../../img/sity/sity_back.webp");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1467,6 +1468,14 @@ svg.mask {
 ._3dface__bottom {
   width: 98vw;
   height: 97vh;
+}
+
+._3dface__bottom-background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../img/guns/guns2.webp);
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .militech {
