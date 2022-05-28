@@ -2656,7 +2656,7 @@ svg.mask {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3/5;
-  background-image: url(../../../img/cars/yaiba-kusanagi-ct-3x.jpg);
+  background-image: url(../../../img/cars/yaiba-kusanagi-ct-3x.webp);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -2721,7 +2721,7 @@ svg.mask {
   grid-column: 1/2;
   -ms-grid-row: 1;
   grid-row: 1/1;
-  background-image: url(../../../img/cars/porshe.jpg);
+  background-image: url(../../../img/cars/porshe.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2758,7 +2758,7 @@ svg.mask {
   grid-column: 1/2;
   -ms-grid-row: 3;
   grid-row: 3/3;
-  background-image: url(../../../img/cars/Cyberpunk2077_QuadraType66_Nomad-948-1080.jpg);
+  background-image: url(../../../img/cars/Cyberpunk2077_QuadraType66_Nomad-948-1080.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2792,7 +2792,7 @@ svg.mask {
   height: 100%;
   -ms-grid-column: 2;
   grid-column: 2/2;
-  background-image: url(../../../img/cars/VillefortAlvarado.jpg);
+  background-image: url(../../../img/cars/VillefortAlvarado.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2828,7 +2828,7 @@ svg.mask {
   grid-column: 3/3;
   -ms-grid-row: 1;
   grid-row: 1/1;
-  background-image: url(../../../img/cars/1607933951_rayfield-caliburn.jpg);
+  background-image: url(../../../img/cars/1607933951_rayfield-caliburn.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2871,7 +2871,7 @@ svg.mask {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #bfe2ff;
   }
   to {
-    text-shadow: 0 0 20px #bfe2ff, 0 0 15px #bfe2ff, 0 0 20px #bfe2ff, 0 0 50px #bfe2ff, 0 0 300px #bfe2ff;
+    text-shadow: 0 0 20px #bfe2ff, 0 0 15px #bfe2ff, 0 0 20px #bfe2ff, 0 0 50px #bfe2ff, 0 0 300px #bfe2ff;
   }
 }
 
@@ -2880,7 +2880,7 @@ svg.mask {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #bfe2ff;
   }
   to {
-    text-shadow: 0 0 20px #bfe2ff, 0 0 15px #bfe2ff, 0 0 20px #bfe2ff, 0 0 50px #bfe2ff, 0 0 300px #bfe2ff;
+    text-shadow: 0 0 20px #bfe2ff, 0 0 15px #bfe2ff, 0 0 20px #bfe2ff, 0 0 50px #bfe2ff, 0 0 300px #bfe2ff;
   }
 }
 
