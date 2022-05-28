@@ -2022,7 +2022,7 @@ svg.mask {
 }
 
 ._3dface__back {
-  background-image: url(../../../img/cyberware/fog.jpg);
+  background-image: url(../../../img/cyberware/fog.webp);
   background-size: cover;
 }
 
@@ -2041,12 +2041,12 @@ svg.mask {
 }
 
 .body__cyberware {
-  display: none;
   position: absolute;
   right: 10%;
   width: 400px;
+  left: 60%;
   height: 740px;
-  background-image: url(../../../img/cyberware/imagine-lion-1.png);
+  background-image: url(../../../img/cyberware/imagine-lion-1.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -2568,6 +2568,28 @@ svg.mask {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .body__cyberware {
+    left: 40%;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .body__cyberware {
+    left: 60%;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .body__cyberware {
+    left: 45%;
   }
 }
 
