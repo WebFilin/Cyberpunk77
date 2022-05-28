@@ -679,6 +679,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
 .map-nav {
   width: 1px;
   position: absolute;
@@ -810,15 +814,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .items__wraper-sity {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wraper__sity-btn {
@@ -879,7 +888,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 10px;
   top: 8%;
   position: absolute;
-  width: 60%;
+  width: 70%;
   height: auto;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -889,20 +898,35 @@ h1, h2, h3, h4, h5, h6 {
   font-family: verdana;
 }
 
-.menu h2 {
+.items__menu-txt {
+  width: 50%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.items__menu-txt h2 {
   display: block;
   font-size: 1.2em;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  padding: 10px;
   font-weight: bold;
 }
 
+.items__menu-txt p {
+  font-size: 0.8em;
+}
+
+.menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .img__menu {
-  width: 25vw;
-  height: 20vh;
-  float: left;
+  width: 50%;
+  height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .sity__center-menu {
@@ -1053,18 +1077,27 @@ a.obl-city:hover:after {
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 760px) and (max-width: 991px) {
+@media (min-width: 760px) and (max-width: 1070px) {
   .items {
-    width: 145px;
-    height: 145px;
+    width: 120px;
+    height: 120px;
+  }
+  .items:nth-child(-n+6) {
+    margin-bottom: -30px;
   }
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .items {
-    width: 130px;
-    height: 130px;
+    width: 90px;
+    height: 90px;
+  }
+  .items-txt {
+    font-size: 18px;
+  }
+  .items:nth-child(-n+6) {
+    margin-bottom: -20px;
   }
 }
 
