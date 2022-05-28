@@ -1,1 +1,0 @@
-function ibg() { for (var b = document.querySelectorAll(".ibg"), a = 0; a < b.length; a++)b[a].querySelector("img") && (b[a].style.backgroundImage = "url(" + b[a].querySelector("img").getAttribute("src") + ")") } ibg();

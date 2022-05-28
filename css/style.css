@@ -2959,23 +2959,6 @@ svg.mask {
           clip-path: polygon(5.94% 28.66%, 100.61% -0.67%, 101.1% 108.57%, 5.4% 126.28%);
 }
 
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.ibg img {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
 .wraper {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2991,6 +2974,7 @@ svg.mask {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 560px;
 }
 
 .txt {
@@ -3011,3 +2995,13 @@ svg.mask {
   right: 1%;
   opacity: 0.6;
 }
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 700px) {
+  .arasaka__logo {
+    display: none;
+  }
+}
+
+/* Portrait phones and smaller */
+/* Iphone 5 */
