@@ -19,7 +19,7 @@ $flip: .8s;
    transition-duration: $flip;
    transform: scale(var(--flipZoom)) rotate3d(var(--flipX), var(--flipY), var(--flipZ), (var(--flipDeg)));
 
-   // transform: rotateX(-90deg);
+   // transform: rotateY(90deg);
 
    // переменные управления поворотом
    --flipX: ;
@@ -69,7 +69,7 @@ $flip: .8s;
    width: $cubeDepth;
    height: $cubeHeight;
    transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2);
-   // background-color: yellow;
+   background-color: rgba(rgb(75, 72, 72), 1);
 }
 
 ._3dface__right {
