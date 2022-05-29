@@ -389,7 +389,12 @@ $cubeHeight: 97vh;
     height: 120px;
     font-size: 14px;
   }
+
+  .info__txt-guns {
+    font-size: 22px;
+  }
 }
+
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .items__guns {
@@ -406,6 +411,14 @@ $cubeHeight: 97vh;
     p {
       font-size: 14px;
     }
+  }
+
+  .info__txt-guns {
+    font-size: 20px;
+  }
+
+  .btn__more {
+    font-size: 30px;
   }
 }
 /* Landscape phones and portrait tablets */
@@ -424,5 +437,13 @@ $cubeHeight: 97vh;
     p {
       font-size: 12px;
     }
+  }
+
+  .info__txt-guns {
+    font-size: 16px;
+  }
+
+  .btn__more {
+    font-size: 25px;
   }
 }

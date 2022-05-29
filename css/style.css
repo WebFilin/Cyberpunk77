@@ -1953,6 +1953,9 @@ svg.mask {
     height: 120px;
     font-size: 14px;
   }
+  .info__txt-guns {
+    font-size: 22px;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -1968,6 +1971,12 @@ svg.mask {
   .info-guns-types p {
     font-size: 14px;
   }
+  .info__txt-guns {
+    font-size: 20px;
+  }
+  .btn__more {
+    font-size: 30px;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -1982,6 +1991,12 @@ svg.mask {
   }
   .info-guns-types p {
     font-size: 12px;
+  }
+  .info__txt-guns {
+    font-size: 16px;
+  }
+  .btn__more {
+    font-size: 25px;
   }
 }
 
