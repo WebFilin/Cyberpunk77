@@ -1184,14 +1184,14 @@ a.obl-city:hover:after {
   z-index: 1;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  bottom: -10%;
+  bottom: 1vh;
   left: 49%;
 }
 
 .control-nav li {
   position: relative;
-  width: 2vw;
-  height: 2vw;
+  width: 20px;
+  height: 20px;
   margin: 5px;
   background: #337ab7;
   border-radius: 50%;
@@ -1229,17 +1229,9 @@ a.obl-city:hover:after {
   display: none;
 }
 
-.back-button {
-  width: 3vw;
-  height: 3vw;
-  background: #337ab7;
-  opacity: 0.8;
-  border-radius: 50%;
-}
-
-.next-button {
-  width: 3vw;
-  height: 3vw;
+.obl {
+  width: 40px;
+  height: 40px;
   background: #337ab7;
   opacity: 0.8;
   border-radius: 50%;
@@ -1370,98 +1362,69 @@ svg.mask {
   }
 }
 
-/* Large desktops and laptops */
-@media (max-width: 1200px) {
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .obl {
+    width: 35px;
+    height: 35px;
+  }
+  .control-nav li {
+    width: 18px;
+    height: 18px;
+  }
   .title-wrapper {
     width: 20vw;
-    left: 12%;
+    left: 13vw;
   }
   .title-wrapper h2 {
     font-size: 28px;
   }
   .title-wrapper p {
     font-size: 20px;
-  }
-  .control-nav li {
-    width: 2.5vw;
-    height: 2.5vw;
-  }
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .slider-container {
-    bottom: -5%;
-  }
-  .back-button {
-    width: 4vw;
-    height: 4vw;
-  }
-  .next-button {
-    width: 4vw;
-    height: 4vw;
-  }
-  .control-nav li {
-    width: 1.7vw;
-    height: 1.7vw;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  .slider-container {
-    bottom: 1%;
-  }
   .title-wrapper {
-    width: 20vw;
-    left: 13%;
+    width: 18vw;
+    left: 15vw;
   }
   .title-wrapper h2 {
     font-size: 28px;
   }
   .title-wrapper p {
-    font-size: 20px;
+    font-size: 16px;
   }
-  .back-button {
-    width: 4vw;
-    height: 4vw;
-  }
-  .next-button {
-    width: 4vw;
-    height: 4vw;
+  .obl {
+    width: 30px;
+    height: 30px;
   }
   .control-nav li {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 13px;
+    height: 13px;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .slider-container {
-    bottom: 2%;
-  }
   .title-wrapper {
     width: 18vw;
-    left: 15.5%;
+    left: 16vw;
   }
   .title-wrapper h2 {
     font-size: 25px;
   }
   .title-wrapper p {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .back-button {
-    width: 4vw;
-    height: 4vw;
-  }
-  .next-button {
-    width: 4vw;
-    height: 4vw;
+  .obl {
+    width: 30px;
+    height: 30px;
   }
   .control-nav li {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 10px;
+    height: 10px;
   }
 }
 
