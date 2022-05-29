@@ -96,7 +96,6 @@ $colorTxtTitleCars: azure;
   height: 80%;
 
   filter: none;
-  background-color: rgba($colorArrow, 0.8);
 
   h2 {
     color: $colorTxtTitleCars;
@@ -138,7 +137,6 @@ $colorTxtTitleCars: azure;
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin-top: -5vh;
 
   &:hover ~ .info-porsh {
     animation-name: porsh;
@@ -228,7 +226,6 @@ $colorTxtTitleCars: azure;
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: -4vh;
 
   &:hover ~ .info-sportcar {
     animation-name: sportcar;
@@ -337,6 +334,11 @@ $colorTxtTitleCars: azure;
 @media (min-width: 768px) and (max-width: 991px) {
   .title-cars {
     margin-bottom: 10%;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    width: 50%;
+    margin-left: 37%;
+
     span {
       font-size: 25px;
       line-height: 20px;
@@ -344,15 +346,42 @@ $colorTxtTitleCars: azure;
   }
 
   .more-cars {
+    grid-column: 3/3;
+    grid-row: 3/3;
     a {
       font-size: 25px;
     }
   }
+
+  .block-moto {
+    grid-column: 2/2;
+    grid-row: 3/3;
+  }
+
+  .block-qaddra {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    background-position: 50% 50%;
+     margin-top: 80%;
+  }
+
+  .info-cars {
+    width: 80%;
+    height: 100%;
+    margin-right: 10%;
+  }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .wraper-cars {
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
   .title-cars {
-    margin-bottom: 15%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-top: 10%;
+
     span {
       font-size: 23px;
       line-height: 5px;
@@ -360,9 +389,53 @@ $colorTxtTitleCars: azure;
   }
 
   .more-cars {
+    grid-column: 3/3;
+    grid-row: 5/5;
+    margin-bottom: 40%;
+
     a {
       line-height: 35px;
       font-size: 23px;
     }
+  }
+
+  .block-moto {
+    grid-column: 2/2;
+    grid-row: 5/5;
+    margin-bottom: 40%;
+  }
+
+  .block-sportcar {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin-top: 20%;
+  }
+
+  .block-qaddra {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    background-position: 50% 50%;
+    margin-bottom: 15%;
+  }
+
+  .block-porsh {
+    grid-column: 1/1;
+    grid-row: 4/4;
+    margin-bottom: 35%;
+  }
+
+  .block-limo {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    margin-top: 10%;
+  }
+
+  .info-cars {
+    grid-column: 2/4;
+    grid-row: 2/5;
+
+    width: 80%;
+    height: 50%;
+    margin-right: 10%;
   }
 }
