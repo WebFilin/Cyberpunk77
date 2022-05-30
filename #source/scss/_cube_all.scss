@@ -19,7 +19,7 @@ $flip: .8s;
    transition-duration: $flip;
    transform: scale(var(--flipZoom)) rotate3d(var(--flipX), var(--flipY), var(--flipZ), (var(--flipDeg)));
 
-   // transform: rotateY(90deg);
+   // transform: rotateX(-180deg);
 
    // переменные управления поворотом
    --flipX: ;

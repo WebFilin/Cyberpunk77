@@ -2011,9 +2011,8 @@ svg.mask {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2021,7 +2020,6 @@ svg.mask {
 
 .body__cyberware {
   position: absolute;
-  right: 10%;
   width: 400px;
   left: 60%;
   height: 740px;
@@ -2087,7 +2085,7 @@ svg.mask {
 
 .cyber__info-more-btn {
   position: absolute;
-  left: 200px;
+  left: 30%;
   width: auto;
   height: 50px;
   background-color: rgba(51, 122, 183, 0.5);
@@ -2122,8 +2120,8 @@ svg.mask {
 
 .cyber__info-content {
   overflow: hidden;
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   font-size: 18px;
   -webkit-clip-path: polygon(0% 0%, 79% 0%, 100% 22%, 100% 100%, 30% 100%, 0% 62%);
           clip-path: polygon(0% 0%, 79% 0%, 100% 22%, 100% 100%, 30% 100%, 0% 62%);
@@ -2136,16 +2134,18 @@ svg.mask {
 }
 
 .cyber__info-content h2 {
+  display: inline-block;
+  width: 20%;
   font-weight: bold;
+  line-height: 1.2;
   text-transform: uppercase;
-  padding: 5px 5px 0px 0px;
-  margin-right: 100px;
+  padding: 10px 0px 10px 0px;
+  margin-right: 20%;
 }
 
 .cyber-info__wraper-bottom {
   position: relative;
   overflow: hidden;
-  width: 500px;
   height: 300px;
 }
 
@@ -2177,7 +2177,7 @@ svg.mask {
 
 .cyber__info {
   position: relative;
-  right: -100%;
+  left: 100%;
   top: 20%;
 }
 
@@ -2226,6 +2226,10 @@ svg.mask {
 .cyber-info__content-img-reflex-tuner {
   float: left;
   shape-outside: polygon(0px 0px, 160px 0px, 155px 93px, 137px 139px, 115px 170px, 0px 170px);
+}
+
+.cyber-info__content-img-reflex-tuner h2 {
+  display: inline-block;
 }
 
 .cyber-netwatch {
@@ -2551,24 +2555,34 @@ svg.mask {
 }
 
 /* Large desktops and laptops */
-@media (min-width: 1200px) {
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
   .body__cyberware {
-    left: 40%;
+    left: 60%;
   }
 }
 
-/* Landscape tablets and medium desktops */
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .body__cyberware {
-    left: 60%;
+    left: 55%;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .body__cyberware {
-    left: 45%;
+    left: 50%;
+  }
+  .cyber__info {
+    left: 80%;
+  }
+  .cyber__info-content {
+    width: 90%;
+    height: auto;
+  }
+  .cyber__info-content p {
+    font-size: 18px;
   }
 }
 
