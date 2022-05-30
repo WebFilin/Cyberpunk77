@@ -1335,7 +1335,7 @@ svg.mask {
   opacity: 0;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
           transform: translateX(-50%) translateY(-50%) scale(0.2);
-  margin-top: 1.55vw;
+  margin-top: 50%;
 }
 
 .obl:after {
@@ -1671,8 +1671,9 @@ svg.mask {
 
 .info__guns-all h2 {
   display: inline-block;
-  left: 0px;
   color: whitesmoke;
+  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .info__guns {
@@ -1684,7 +1685,8 @@ svg.mask {
 }
 
 .img__guns {
-  width: 100%;
+  width: 50%;
+  height: auto;
   float: left;
   padding: 0px 10px;
 }
@@ -1725,6 +1727,7 @@ svg.mask {
   -webkit-clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
           clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
   cursor: pointer;
+  border: 2px solid yellowgreen;
 }
 
 .btn__more:hover,

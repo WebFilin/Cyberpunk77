@@ -204,8 +204,9 @@ $cubeHeight: 97vh;
   transform: translateX(-110%);
   h2 {
     display: inline-block;
-    left: 0px;
     color: whitesmoke;
+    text-transform: uppercase;
+    padding-top: 10px;
   }
 }
 
@@ -217,7 +218,8 @@ $cubeHeight: 97vh;
 }
 
 .img__guns {
-  width: 100%;
+  width: 50%;
+  height: auto;
   float: left;
   padding: 0px 10px;
 }
@@ -255,6 +257,7 @@ $cubeHeight: 97vh;
   padding-bottom: 10px;
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
   cursor: pointer;
+  border: 2px solid $colorBorder;
 }
 
 .btn__more:hover,
