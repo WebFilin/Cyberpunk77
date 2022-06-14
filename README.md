@@ -1,8 +1,8 @@
 ![alt tag](https://github.com/WebFilin/cyberpunk77/blob/main/cuberpunk.jpg)
 
-Мой взгляд на мир и вселенную игры Cyberpunk 2077 – выполнен в виде некоего путеводителя по различным аспектам и явлениям жизни в Night City
+### Welcome to Night City young padawan!
 
-Welcome to Night City young padawan!
+Мой взгляд на мир и вселенную игры Cyberpunk 2077 – выполнен в виде некоего путеводителя по различным аспектам и явлениям жизни в Night City
 
 ## Цель проекта:
 1.	Глубокая работа и изучения взаимодействия различных технологий визуальных эффектов 
